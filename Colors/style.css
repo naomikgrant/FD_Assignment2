@@ -1,0 +1,19 @@
+h1 {
+    color:rgb(228, 60, 178); /*RGB*/
+}
+
+h2 {
+    color:hsl(300, 68%, 77%) ;/*HSL*/
+}
+
+h3 {
+    color:rgb(239, 186, 204); /*Keyword*/
+}
+
+h4 {
+    color:#ffffff; /*HEX*/
+}
+
+div {
+    background-color:rgb(0, 0, 0)
+}
