@@ -74,13 +74,14 @@ a:link, a:visited {
     margin-right: 100px;
 }
 .item2_1{
-    flex: 1;
     font-weight: 800;
     font-size: 36px;
     color: #1F2937;
 }
 .item2_2{
-    flex:1;
+    flex: 1;
+    border-color: #3882f6;
+    border-radius: 10px;
 }
 /*Divisions*/
 .hf_container1 {
@@ -101,13 +102,15 @@ a:link, a:visited {
     justify-content: center;
     text-align: center;
 }
-.container2 {
+.container2_1 {
     font-family: 'Roboto', sans-serif;
+    height: 100px;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
+    vertical-align: middle;
+    line-height: 100px;
 }
 .header {
     font-size: 24px;
