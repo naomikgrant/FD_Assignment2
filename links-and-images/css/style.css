@@ -1,6 +1,7 @@
 /*Body Content Specifications*/
 body {
     background-color: rgba(216, 147, 170, 0.868);
+    margin: 0px;
     font-family: Garamond, Perpetua, Georgia,'Times New Roman', Times, serif; 
     color:white;
     text-align: center;
