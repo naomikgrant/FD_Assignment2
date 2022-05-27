@@ -129,18 +129,17 @@ a:link, a:visited {
     justify-content: center;
     align-items: center;
  }
-.item4 { 
-    height: 120px;  
-    background-color: #3882f6;
-    border-radius: 10px;
-}
 .item4-1{
-    justify-content: flex-start;
-    text-align: left;
+    margin-right: 450px;
 }
 .item4-2 { 
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    vertical-align: middle;
+}
+.item4-2 .row { 
+    gap: 100px;
 }
 /*Divisions*/
 .container1-1 {
@@ -177,7 +176,13 @@ a:link, a:visited {
     align-items: center;
 }
 .container4 {
-    background-color: #F9FAF8;
+    background-color: #3882f6;
+    height: 120px;
+    width: 900px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    margin-left: 180px;  
+    border-radius: 10px;
     font-family: 'Roboto', sans-serif;
     display: flex;
     flex-direction: column;
@@ -188,8 +193,7 @@ a:link, a:visited {
 .footer {
     clear: both;
     position: relative;
-    height: 200px;
-    margin-top: -200px;
+    height: 90px;
     font-family: 'Roboto', sans-serif;
     background-color: #1F2937;
     display: flex;
@@ -209,16 +213,16 @@ a:link, a:visited {
     vertical-align: middle;
     line-height: 40px;
 }
+#header {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    color: #F9FAF8;
+}
 #push-right {
     margin-left: auto;
 }
 #push-left { 
     margin-right: 100px;
-}
-.header {
-    font-family: 'Roboto', sans-serif;
-    font-size: 24px;
-    color: #F9FAF8;
 }
 #main {
     font-family: 'Roboto', sans-serif;
