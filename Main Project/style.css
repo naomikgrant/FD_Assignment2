@@ -13,7 +13,7 @@
 }
 @font-face {
     font-family: 'Roboto';
-    src: url(fonts/Roboto-Light.ttf) format('truetype');
+    src: url(fonts/Roboto-Regular.ttf) format('truetype');
     font-weight: 300;
     font-size: 18px;
     color: #E5E7EB;
@@ -32,11 +32,24 @@
     font-size: 36px;
     color: #1F2937;
 }
+@font-face {
+    font-family: 'Roboto';
+    src: url(fonts/Roboto-LightItalic.ttf) format('truetype');
+    font-size: 36px;
+    color: #1F2937;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url(fonts/Roboto-Bold.ttf) format('truetype');
+    font-weight: 900;
+    font-size: 18px;
+    color: #1F2937;
+}
 /*Body Content Specifications*/
 body {
-    color: #E5E7EB;
-    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
     font-size: 18px;
+    color: #E5E7EB;
     background-color: white;
     margin: 0px;
 }
@@ -45,46 +58,78 @@ a {
     text-decoration: none;
 }
 a:link, a:visited {
+    font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-size: 18px;
     color: #E5E7EB;
 }
-#button a:link, a:visited {
+.button a:link, a:visited {
+    font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 18px;
     color: #F9FAF8;
 }
 /*Items in divisions*/
-.hf_item1 {
+.item1-1 {
     flex: 1;
 }
-.hf_item2 {
+.item1-2 {
     flex-grow: 1;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #E5E7EB;
     display: inline-flex;
     gap: 50px;
 }
-.hf_item3 {
+.item1-3 {
     flex-direction: column;
     text-align: left;
     margin-left: 120px;
     margin-right: 40px;
 }
-.hf_item4 {
+.item1-4 {
     flex-grow: 1;
     margin-right: 100px;
 }
-.item2_1{
+.item2-1 { 
+    flex-direction: row;
+    height: 140px;
     font-weight: 800;
     font-size: 36px;
     color: #1F2937;
+    vertical-align: middle;
+    line-height: 140px;
 }
-.item2_2{
-    flex: 1;
-    border-color: #3882f6;
-    border-radius: 10px;
+.item2-2 {
+   display: flex;
+   flex-direction: row;
+   gap: 50px;
 }
+.item2-2 .row1 {
+   height: 180px;
+   width: 170px;
+   border-radius: 25px;
+   border: 5px solid #3882f6;
+}
+.item2-2 .row2 {
+    height: 50px;
+    width: 170px;
+    font-size: 18px;
+    color: #6e737d;
+    border-radius: 25px;
+    border-top: 5px solid transparent;
+    border-bottom: 150px solid white;
+    text-align: center;
+ }
+ .item3 {   
+    height: auto;
+    margin: 150px 240px 70px 240px;
+    border-color: #E5E7EB;
+    justify-content: center;
+    align-items: center;
+ }
 /*Divisions*/
-.hf_container1 {
+.container1-1 {
     font-family: 'Roboto', sans-serif;
     background-color: #1F2937;
     display: flex;
@@ -92,7 +137,7 @@ a:link, a:visited {
     align-items: center;
     text-align: center;
 }
-.hf_container2 {
+.container1-2 {
     font-family: 'Roboto', sans-serif;
     background-color: #1F2937;
     border-top: 50px solid #1F2937;
@@ -102,21 +147,35 @@ a:link, a:visited {
     justify-content: center;
     text-align: center;
 }
-.container2_1 {
+.container2 {
     font-family: 'Roboto', sans-serif;
-    height: 100px;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
     text-align: center;
-    vertical-align: middle;
-    line-height: 100px;
 }
-.header {
-    font-size: 24px;
-    color: #F9FAF8;
+.container3 {
+    background-color: #E5E7EB;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-#button {
+.footer {
+    clear: both;
+    position: relative;
+    height: 200px;
+    margin-top: -200px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #1F2937;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.button {
+    font-family: 'Roboto', sans-serif;
     width: 150px;
     height: 40px;
     background-color: #3882f6;
@@ -133,12 +192,21 @@ a:link, a:visited {
 #push-left { 
     margin-right: 100px;
 }
+#header {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    color: #F9FAF8;
+}
 #main {
+    font-family: 'Roboto', sans-serif;
     font-weight: 800;
     font-size: 48px;
     color: #F9FAF8;
 }
 #placeholder {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #E5E7EB;
     background-color: #6e737d;
     height: 200px;
     width: 550px;
@@ -146,4 +214,14 @@ a:link, a:visited {
     vertical-align: middle;
     line-height: 200px;
 }
-
+#quote {
+    font-size: 36px;
+    color: #1F2937;
+    text-align: left;
+}
+#quotedby {
+    font-weight: 900;
+    font-size: 18px;
+    color: #1F2937;
+    text-align: right;
+}
