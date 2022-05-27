@@ -47,10 +47,10 @@
 }
 /*Body Content Specifications*/
 body {
-    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
     font-size: 18px;
     color: #E5E7EB;
-    background-color: white;
+    background-color: #F9FAF8;
     margin: 0px;
 }
 /*URL Link Specifications*/
@@ -76,6 +76,7 @@ a:link, a:visited {
 .item1-2 {
     flex-grow: 1;
     font-family: 'Roboto', sans-serif;
+    font-weight: 300;
     font-size: 18px;
     color: #E5E7EB;
     display: inline-flex;
@@ -118,16 +119,29 @@ a:link, a:visited {
     color: #6e737d;
     border-radius: 25px;
     border-top: 5px solid transparent;
-    border-bottom: 150px solid white;
+    border-bottom: 150px solid #F9FAF8;
     text-align: center;
  }
- .item3 {   
+.item3 {   
     height: auto;
     margin: 150px 240px 70px 240px;
     border-color: #E5E7EB;
     justify-content: center;
     align-items: center;
  }
+.item4 { 
+    height: 120px;  
+    background-color: #3882f6;
+    border-radius: 10px;
+}
+.item4-1{
+    justify-content: flex-start;
+    text-align: left;
+}
+.item4-2 { 
+    display: flex;
+    flex-direction: row;
+}
 /*Divisions*/
 .container1-1 {
     font-family: 'Roboto', sans-serif;
@@ -150,9 +164,9 @@ a:link, a:visited {
 .container2 {
     font-family: 'Roboto', sans-serif;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     text-align: center;
 }
 .container3 {
@@ -161,6 +175,15 @@ a:link, a:visited {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.container4 {
+    background-color: #F9FAF8;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 .footer {
     clear: both;
@@ -192,7 +215,7 @@ a:link, a:visited {
 #push-left { 
     margin-right: 100px;
 }
-#header {
+.header {
     font-family: 'Roboto', sans-serif;
     font-size: 24px;
     color: #F9FAF8;
